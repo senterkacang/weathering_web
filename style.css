@@ -250,3 +250,43 @@ h1 {
     padding: 3px 10px; 
     border-radius: 12px;
 }
+
+/* ========================================================= */
+/* 4. MOBILE RESPONSIVENESS (ANDROID / iOS)                  */
+/* ========================================================= */
+
+@media (max-width: 768px) {
+    /* Navbar menyesuaikan ukuran HP */
+    .top-navbar {
+        padding: 12px 15px;
+        margin-top: -40px; /* Menarik lebih ke atas di HP */
+    }
+    .nav-logo { font-size: 1.8rem; }
+    .nav-title { font-size: 1.2rem; }
+    .nav-subtitle { font-size: 0.65rem; }
+
+    /* Hero Card ditumpuk atas-bawah, bukan kiri-kanan */
+    .hero-body {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+    .hero-left, .hero-right {
+        width: 100%;
+    }
+    
+    /* Ukuran Font Suhu dikecilkan agar tidak meluber */
+    .hero-icon { font-size: 4rem; }
+    .hero-temp { font-size: 4.5rem; }
+    .hero-unit { font-size: 1.5rem; margin-top: 5px; }
+    .hero-desc { font-size: 1.2rem; }
+    .hero-detail-row { font-size: 1rem; }
+
+    /* Hourly Scroll dirapatkan sedikit */
+    .hourly-wrapper {
+        gap: 20px;
+        padding: 15px 15px;
+    }
+    .h-icon { font-size: 2.2rem; }
+    .h-temp { font-size: 1.6rem; }
+}
