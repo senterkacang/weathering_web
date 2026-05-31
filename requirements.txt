@@ -3,3 +3,5 @@ joblib
 scikit-learn
 pandas
 tensorflow
+pytz
+plotly
