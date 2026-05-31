@@ -53,7 +53,7 @@ def render_hero_card(waktu_header, ikon_hero, suhu_now, status_teks_hero, kel_no
                 <span class="hero-val">{tek_now} hPa</span>
             </div>
             <div class="hero-detail-row">
-                <span class="hero-label">Precision Temp (Sensor)</span>
+                <span class="hero-label">Temperature</span>
                 <span class="hero-val">{suhu_now} &deg;C</span>
             </div>
             <div class="hero-detail-row">
