@@ -6,3 +6,4 @@ tensorflow
 pytz
 plotly
 folium
+streamlit-folium
