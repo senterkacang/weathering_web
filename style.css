@@ -1,0 +1,252 @@
+/* ========================================================= */
+/* FILE: style.css                                           */
+/* FUNGSI: Desain Visual dan Tipografi Dashboard             */
+/* ========================================================= */
+
+/* 1. Kustomisasi Global */
+h1 { 
+    font-weight: 800 !important; 
+    color: #1E88E5; 
+}
+
+/* ========================================================= */
+/* TOP NAVIGATION BAR (HEADER)                               */
+/* ========================================================= */
+.top-navbar {
+    background-color: #1a1a1a; 
+    padding: 15px 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: -30px; /* Menarik bar ke atas agar merapat */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border-bottom: 4px solid #1E88E5; /* Garis aksen biru bawah */
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-logo {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.nav-title-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.nav-subtitle {
+    font-size: 0.75rem;
+    color: #aaaaaa;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-item {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: #1E88E5;
+}
+
+/* 2. Hero Card (Widget Cuaca Saat Ini) */
+.hero-card {
+    background-color: var(--secondary-background-color);
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.hero-header {
+    display: flex; 
+    justify-content: space-between;
+    text-transform: uppercase; 
+    font-size: 0.85em; 
+    font-weight: 700;
+    letter-spacing: 0.5px; 
+    opacity: 0.7;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    padding-bottom: 15px; 
+    margin-bottom: 25px;
+}
+
+.hero-body { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.hero-left { 
+    width: 45%; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.hero-temp-row { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.hero-icon { 
+    font-size: 6rem; 
+    line-height: 1; 
+}
+
+.hero-temp-wrapper { 
+    display: flex; 
+    align-items: flex-start; 
+}
+
+.hero-temp { 
+    font-size: 6.5rem; 
+    font-weight: 800; 
+    line-height: 0.9; 
+    letter-spacing: -3px; 
+}
+
+.hero-unit { 
+    font-size: 2rem; 
+    font-weight: 600; 
+    opacity: 0.7; 
+    margin-top: 10px; 
+    margin-left: 5px; 
+}
+
+.hero-desc { 
+    font-size: 1.6rem; 
+    font-weight: 700; 
+    margin-top: 15px; 
+}
+
+.hero-right { 
+    width: 50%; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 18px; 
+}
+
+.hero-detail-row {
+    display: flex; 
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2); 
+    padding-bottom: 10px; 
+    font-size: 1.15rem;
+}
+
+.hero-detail-row:last-child { 
+    border-bottom: none; 
+    padding-bottom: 0; 
+}
+
+.hero-label { 
+    opacity: 0.8; 
+}
+
+.hero-val { 
+    font-weight: 700; 
+}
+
+.val-highlight { 
+    color: #E67E22; 
+    font-weight: 800;
+}
+
+
+/* 3. Hourly Scroll View (Prakiraan Per Jam Menyamping) */
+.hourly-wrapper {
+    background-color: var(--secondary-background-color);
+    border-radius: 12px;
+    padding: 25px 20px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    display: flex;
+    overflow-x: auto;
+    gap: 35px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(128, 128, 128, 0.5) transparent;
+}
+
+.hourly-wrapper::-webkit-scrollbar { 
+    height: 8px; 
+}
+
+.hourly-wrapper::-webkit-scrollbar-thumb { 
+    background-color: rgba(128, 128, 128, 0.5); 
+    border-radius: 4px; 
+}
+
+.hourly-item { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    min-width: 75px; 
+    transition: transform 0.2s ease;
+}
+
+.hourly-item:hover {
+    transform: scale(1.08);
+}
+
+.h-time { 
+    font-size: 1.15em; 
+    font-weight: 800; 
+    margin-bottom: 12px; 
+    white-space: nowrap; 
+}
+
+.h-icon { 
+    font-size: 2.8em; 
+    margin-bottom: 10px; 
+}
+
+.h-temp { 
+    font-size: 2em; 
+    font-weight: 800; 
+    margin-bottom: 8px; 
+}
+
+.h-drop { 
+    font-size: 0.95em; 
+    opacity: 0.7; 
+    display: flex; 
+    align-items: center; 
+    gap: 4px; 
+    font-weight: 600; 
+    margin-bottom: 6px;
+}
+
+.h-idx { 
+    font-size: 0.8em; 
+    color: #E67E22; 
+    font-weight: 700; 
+    background: rgba(230, 126, 34, 0.1); 
+    padding: 3px 10px; 
+    border-radius: 12px;
+}
