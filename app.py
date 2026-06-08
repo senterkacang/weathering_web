@@ -138,6 +138,7 @@ def weather_label(index):
 # 4. DEEP LEARNING ENGINE & DATA FETCHING
 # ---------------------------------------------------------
 
+
 @st.cache_resource
 def load_ml_assets():
     model = tf.keras.models.load_model(MODEL_PATH)
